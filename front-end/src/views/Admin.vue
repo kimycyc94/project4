@@ -201,7 +201,7 @@ export default {
     },
     async getVehicles() {
       try {
-        let response = await axios.get("/api/vehicles/");
+        let response = await axios.get("/api/vehicles");
         this.vehicles = response.data;
         return true;
       } catch (error) {
